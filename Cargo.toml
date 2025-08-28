@@ -1,0 +1,16 @@
+[package]
+name = "markup-type"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[[bin]]
+name = "markup-type-bin"
+path = "src/mod.rs"
+
+[dependencies]
+colored = "2.1.0"
+const-random = "0.1.18"
+iterator-stage = { path = "../iterator-stage" }
